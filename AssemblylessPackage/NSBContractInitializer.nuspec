@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AirSupport.TechTalk.NSBContractInitializer</id>
+    <version>1.0</version>
+    <title>NSBContractInitializer</title>
+    <authors>toh</authors>
+    <owners>toh</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package generates the structure used for creating contracts used by NServiceBus-projects</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>NServiceBus NSB Utility Contract</tags>
+  </metadata>
+  <files>
+    <file src="readme.txt" target="" />
+    <file src="*\**" target="" />
+  </files>
+</package>

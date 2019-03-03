@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45;net47</TargetFrameworks>
+    <AssemblyName>AirSupport.TechTalk.NugetMSBuild</AssemblyName>
+    <RootNamespace>AirSupport.TechTalk.NugetMSBuild</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>AIR SUPPORT A/S</Authors>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedAllSources>true</EmbedAllSources>
+    <PackageId>AirSupport.TechTalk.SerializationNuget</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Serialization.cs" Link="Serialization.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\SharedPackageAssets\readme.txt" Pack="true" PackagePath="" Visible="false">
+      <Link>readme.txt</Link>
+    </None>
+    <None Include="..\SharedPackageAssets\AirSupport.TechTalk.SerializationNuget.targets" PackagePath="build\" Pack="true" Visible="false">
+      <Link>build\AirSupport.TechTalk.SerializationNuget.targets</Link>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+﻿This package generates the structure used for creating contracts used by NServiceBus-projects
